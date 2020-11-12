@@ -1,0 +1,25 @@
+body {
+    font-family: 'Alike Angular', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+
+/*=================================================
+    Form Styling
+===================================================*/
+
+input[type="text"] {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #b5ffae;
+    width: 25%;
+    margin: 20px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0, 0, 0.5);
+}
+
+input[type="text"]:hover {
+    background-color: #72fc4c;
+}
