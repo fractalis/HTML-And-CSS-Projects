@@ -1,0 +1,21 @@
+table {
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+.header-row {
+    background-color: #fd7b9d;
+}
+
+td:nth-child(2):hover {
+    background-color: #6f9b1f;
+}
