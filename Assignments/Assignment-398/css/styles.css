@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+    width: 50%;
+}
+
+.column_main {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.column_secondary {
+    background-color: #5f5f5f;
+    color: #fff;
+}

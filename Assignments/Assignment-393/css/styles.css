@@ -1,0 +1,15 @@
+.image__center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;
+    border-radius: 20px;
+}
+
+.image__filtered {
+    filter: blur(5px) sepia(50%);
+}
+
+.image__filtered:hover {
+    filter: inherit;
+}
