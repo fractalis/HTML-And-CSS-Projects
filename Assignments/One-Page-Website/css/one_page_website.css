@@ -24,10 +24,6 @@ input[type="text"]:hover {
     background-color: #72fc4c;
 }
 
-.row > .column {
-    padding: 0 8px;
-  }
-
 .row:after {
     content: "";
     display: table;
