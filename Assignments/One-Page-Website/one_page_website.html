@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Alike Angular' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="css/one_page_website.css">
+        <script src="./js/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -31,84 +32,68 @@
         </header>
 
         <!-- GALLERY -->
-        <section>
-            <div id="gallery">
-                <h1>Gallery</h1>
-                <div>
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_1.png" alt="PHP Code">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+        <div class="row">
+            <div class="column">
+                <img src="./images/thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Collection of Dice">
+            </div>
+            <div class="column">
+                <img src="./images/thumb/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Dice">
+            </div>
+            <div class="column">
+                <img src="./images/thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Dragon Figurine">
+            </div>
+            <div class="column">
+                <img src="./images/thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Dice on Character Sheet">
+            </div>
+        </div>
 
-                    <!-- PHOTO-CONTAINER-2 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_2.png" alt="JavaScript Code">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-2 -->
-                    
-                    <!-- PHOTO-CONTAINER-3 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_3.png" alt="JavaScript Code -  Side-By-Side">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-3 -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/thumb/thumbnail_1.png" alt="Collection of Dice" style="width:100%">
+                </div>
 
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_4.png" alt="PHP Code">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
-                    
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_5.png" alt="JavaScript Functions">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/thumb/thumbnail_2.png" alt="Dice" style="width:100%">
+                </div>
 
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_6.png" alt="HTML and CSS">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/thumb/thumbnail_3.png" alt="Dragon Figurine" style="width:100%">
+                </div>
 
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_7.png" alt="HTML Document">>
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/thumb/thumbnail_4.png" alt="Dice on Character Sheet" style="width:100%">
+                </div>
 
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_8.png" alt="PHP Embedded in HTML">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                    <!-- PHOTO-CONTAINER-1 -->
-                    <div>
-                        <div>
-                            <img src="./images/thumb/thumbnail_9.png" alt="Python Code">
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER-1 -->
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="images/thumb/thumbnail_1.png" onclick ="currentSlide(1)" alt="Collection of Dice">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb/thumbnail_2.png" onclick ="currentSlide(2)" alt="Dice">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb/thumbnail_3.png" onclick ="currentSlide(3)" alt="Dragon Figurine">
+                </div>
+                <div class="column">
+                    <img class="demo" src="images/thumb/thumbnail_4.png" onclick ="currentSlide(4)" alt="Dice on Character Sheet">
                 </div>
             </div>
-        </section>
+        </div>
         <!-- END GALLERY-->
 
         <!-- VIDEOS -->
